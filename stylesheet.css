@@ -1,3 +1,14 @@
-body {
-    background:coral;
+
+#gradient {
+  	height: 1rem;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); /* Standard syntax (must be last) */
 }
+#header {
+	background-color: #1C2833 ;
+}
+#about {
+	color: lightsalmon;
+	padding: 1rem;
+}
+

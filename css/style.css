@@ -1,0 +1,42 @@
+body {
+  background: #34495e;
+  color: #fff;
+}
+
+.navbar {
+  border-bottom: #008ed6 3px solid;
+  opacity: 0.9;
+}
+
+h1,
+h2 {
+  color: #f0ad4e;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+/* Background Image start*/
+#home-section {
+  background: url(../img/homebridge2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-attachment: fixed;*/
+  min-height: 550px;
+}
+#home-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 550px;
+  background: rgba(0, 0, 0, 0.7);
+}
+/* Background Image end*/
+
+#home-section .home-inner {
+  padding-top: 125px;
+}
+
+#home-section .card-form {
+  opacity: 0.7;
+}

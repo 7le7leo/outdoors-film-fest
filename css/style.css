@@ -4,7 +4,7 @@ body {
 }
 
 .navbar {
-  border-bottom: #008ed6 3px solid;
+  border-bottom: rgb(0, 142, 214) 3px solid;
   opacity: 0.9;
 }
 
@@ -20,7 +20,7 @@ h2 {
   background: url(../img/homebridge2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /*background-attachment: fixed;*/
+  /* background-position: absolute; */
   min-height: 550px;
 }
 #home-section .dark-overlay {

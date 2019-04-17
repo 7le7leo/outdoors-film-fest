@@ -146,3 +146,8 @@ li.nav-item {
   background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
   box-shadow: -10px -10px 12px grey;
 }
+
+#bgcontactModal {
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}

@@ -308,10 +308,51 @@
 
 
     <!-- Footer Section -->
-
-
-  
+    <footer id="main-footer" class="bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center py-4">
+              <h3>BrooklynVibesEvents Co</h3>
+              <p>Copyright &copy;  <span id="year"></span></p>
+              <button class="btn btn-outline-secondary" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </footer>
     <!-- Footer Section END -->
+
+    <!--CONTACT MODAL-->
+    <div class="modal fade text-dark" id="contactModal">
+      <div class="modal-dialog">
+        <div class="modal-content"  id="bgcontactModal">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact Us</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control"></input>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control"></input>
+              </div>
+              <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea name="Message" id="message" cols="30" rows="5" class="form-control"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-lg btn-outline-secondary btn-block">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <!-- Optional JavaScript span#year for Get the current year-->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

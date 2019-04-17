@@ -1,110 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-
-  <title>Bootstrap Theme</title>
-</head>
-
-<body>
-
-  <nav class="navbar navbar-expand-sm navbar-dark bg-secondary fixed-top pt-3 pb-1">
-    <div class="container">
-      <a href="index.html" class="navbar-brand">
-        <h1 class="display-5">BrooklynFilmFest</h1>
-      </a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <!--Actual Navigation Start-->
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="#about" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#movies-head-section" class="nav-link">Movies</a>
-          </li>
-          <li class="nav-item">
-            <a href="#tickets-head-section" class="nav-link">Tickets</a>
-          </li>
-          <li class="nav-item">
-            <a href="#news-head-section" class="nav-link">News</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Home Section -->
-  <!-- Left side -->
-  <div class="header dark-overlay" id="home-section">
-    <div class="container home-inner">
-      <div class="row">
-        <div class="col-lg-8 col-12">
-          <h1>bla bla bla On a summer evening, there’s nothing quite like <strong>watching a movie</strong>
-            under the stars!</h1>
-          <div class="d-flex">
-            <div class="p-4 align-self-start">
-              <i class="fas fa-check fa-2x"></i>
-            </div>
-            <div class="p-4 align-self-end">
-              <p class="lead"><b>DATE:</b> Thu 5th - Sun 8th, August 2019</p>
-              <p class="lead"><b>LOCATION:</b> Grand Ferry Park, Brooklyn, NY</p>
-            </div>
-          </div>
-
-        </div>
-        <!-- Right side FORM -->
-        <div class="col-lg-4 col-12">
-          <div class="card bg-secondary text-center card-form">
-            <div class="card-body">
-              <h3>Sign Up Today</h3>
-              <p>To get the latest news updates</p>
-              <form>
-                <div class="form-group">
-                  <input type="text" class="form-control from-control-lg" placeholder="Your Name">
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control from-control-lg" placeholder="Email">
-                </div>
-                <input type="submit" value="Submit" class="btn btn-outline-light btn-block">
-              </form>
-            </div>
-          </div>
+    <title>BBMF</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top py-3">
+      <div class="container">
+        <button
+          class="navbar-toggler mb-2"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <!--Actual Navigation Start-->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#about-head-section" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#movies-head-section" class="nav-link">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a href="#tickets-head-section" class="nav-link">Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a href="#news-head-section" class="nav-link">News</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </div>
+    </nav>
 
-</body>
-<!-- START HERE -->
+    <!-- Home -->
 
-<!-- Optional JavaScript span#year for Get the current year-->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
-<script src="http://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script>
-  // Get the current year for the Copyright
-  $("#year").text(new Date().getFullYear());
-</script>
-</body>
+    
+    <header id="home-section">
+      <!--<div class="dark-overlay"></div>-->
+      <div class="home-inner container">
+        <div class="row">
+          <div id="grad" class="col-lg-12 d-sm-block text-center">
+            <h1 id="heading" class="display-4"><i>Brooklyn Outdoor Summer Festival</i></h1>
+            <h3 id="heading" class="display-5">@BROOKLYN BRIDGE PARK</h3>
+          </div>
+          <!--<div class="col-lg-4">
+            Deactivated form- left till later to move down-->
+          <!--<div class="card bg-secondary text-center card-form">
+              <div class="card-body">
+                <h3 id="heading">Sign Up Today</h3>
+                <p id="form">to get the latest news updates</p>
+                
+                <form>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control from-control-lg"
+                      placeholder="Your Name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control from-control-lg"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <input
+                    type="submit"
+                    value="Submit"
+                    class="btn btn-outline-light btn-block"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </div>
+      </div>
+    </header>
 
+    <!-- ABOUT section START HERE -->
+    <!-- ABOUT HEAD -->
+    <div id="border"></div>
+    <section id="about-head-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div id="grad" class="col text-center py-3">
+            <h1>ABOUT</h1>            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -ABOUT THE FESTIVAL- CONTENT -->
+    <section id="about-section" class="bg-light text-muted py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div>
+              <img
+                src="img/about-section.jpg"
+                alt="about-section"
+                class="img-fluid rounded mb-3"
+              />
+            </div>
+          </div>
+        <div class="col-md-6">
+          <h3 class="text-center">Brooklyn Outdoor Film Festival</h3>
+          <!--<p class="text-center">
+            INFORMATION ABOUT THE FESTIVAL
+          </p>-->          
+            This is a festival for those who love the comfort of lawn chairs and the open air. It's an event for people who like sharing their popcorn with the local squirrels. Bring your kids, bring your dog, bring your cat (if you're into that) and sit down for an evening of fine cinema!</p>
+            <p>
+            <p>The event is created and organised by Jennifer Viala, also the founder of Brooklyn Vibes Events Co - the person behind numerous stunning celebration events and special experiences around New York!</p>
+            Note - attendance is free, but the number of spaces is limited. We will close registration if the amount of attendees reaches the venue’s capacity of 5,000 people. Make sure you <span id="register"><a href="#register">REGISTER</a></span> as soon as possible to get your tickets!
+            </p>
+            <p class="lead">
+                <strong>
+                On a summer evening, there’s nothing quite like watching a movie under the stars!</strong>
+                </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="border"></div>
+    <!-- ABOUT section END HERE -->
+
+    <!-- MOVIES section START HERE -->
+    <!-- -MOVIES- HEAD -->
+    <section id="movies-head-section">
+        <div class="container-fluid">
+          <div class="row">
+            <div id="grad" class="col text-center py-3">
+              <h1>MOVIES</h1>            
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- -MOVIES- CONTENT -->
+    <section id="movies-section" class="bg-light text-muted py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="img/about-section.jpg"
+              alt="abput-section"
+              class="img-fluid mb-3 rounded-circle"
+            />
+          </div>
+          <div class="col-md-6">
+            <h3>SHOWING THIS WEEKEND:</h3>
+            <p>
+             THE FILMS WE ARE SHOWING. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quisquam, ut saepe vel reiciendis similique omnis id. Magnam nisi
+              aperiam possimus tenetur rerum voluptatum necessitatibus autem
+              explicabo at assumenda, vero accusantium deleniti repudiandae
+              facilis? Veniam velit saepe dolores minima iure. Harum ducimus
+              vero fugit repellat blanditiis velit laudantium amet nulla
+              repellendus illo architecto, ipsum consequuntur recusandae quo
+              eos! Facilis necessitatibus neque delectus quam aspernatur animi
+              quasi possimus soluta cum praesentium, laudantium nostrum
+              molestias totam eum sint officiis! Eum repellendus deserunt quo
+              explicabo possimus dolores cumque tempore at iure necessitatibus
+              deleniti, quidem est fugit, ab recusandae aut magni neque maxime?
+              Fuga, voluptas?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="border"></div>
+    <!-- MOVIES section end HERE -->
+
+    <!-- TICKETS section START HERE -->
+    <!-- TICKETS HEAD -->
+    <section id="tickets-head-section">
+        <div class="container-fluid">
+          <div class="row">
+            <div id="grad" class="col text-center py-3">
+              <h1> TICKETS </h1>            
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- TICKETS CONTENT and FORM -->
+    <section id="tickets-section" class="bg-light text-muted py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card text-center card-form   mb-4"> <!--bg-secondary -->
+                  <div class="card-body">
+                    <form>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control from-control-lg"
+                          placeholder="Your Name"/>             
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control from-control-lg"
+                          placeholder="Email"/>                
+                        <small class="form-text text-muted">
+                        Your email will not ever be shared</small>
+                       </div>
+                       <div class="form-group">
+                          <label for="date">Choose the date</label>
+                          <select class="form-control" id="date">
+                            <option>August the 5th</option>
+                            <option>August the 6th</option>
+                            <option>August the 7th</option>
+                            <option>August the 8th</option>
+                          </select>
+                          <label for="guests">Number of guests</label>
+                          <select class="form-control" id="date">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                      <input
+                        type="submit"
+                        value="Submit"
+                        class="btn btn-outline-secondary btn-block btn-lg"/>                     
+                    </form>
+                  </div>
+                </div> 
+            </div>  
+                  
+            <div class="col-md-6">
+              <h3 class="text-center">GET YOUR TICKETS HERE</h3>
+              <p class="text-center">
+              REGISTRATION IS FREE AND TAKES ONLY A FEW SECONDS</P>
+              <p>Reserve your space by submitting the form!<br> 
+              Please make sure you have completed all fields - the amount of tickets is limited and incomplete information may be omitted.<br>
+              You will receive a confirmation email that affirms your date of attendance and number of guests. The confirmation email is your admission ticket.<br>
+              Note - multiple attendance dates need separate reservation for each day.
+              In case of reserving tickets for a group of more than 5 people - please contact us, using the email below and we will help you with all the arrangements.</p>
+
+              <p>Do you have any questions? Please e-mail Us - </p>
+              <button class="btn btn-outline-secondary btn-block btn-lg" type="button" description="emailto">info@bbmf.com</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="border"></div>
+    <!-- TICKETS section end HERE -->
+
+    <!-- NEWS section START HERE -->
+    <!-- NEWS HEAD -->
+    <section id="news-head-section">
+        <div class="container-fluid">
+          <div class="row">
+            <div id="grad" class="col text-center py-3">
+              <h1>NEWS</h1>            
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- NEWS CONTENT -->
+    <section id="news-section" class="bg-light text-muted pt-5">
+        <div class="container">
+          <div class="row">            
+            <div class="col-md-12">
+              <h3>THE LATEST NEWS ABOUT THE FESTIVAL</h3>
+              
+              <p>
+                3 CARDS AREA. fOOD AND BEVERAGE SUPPLIERS. SECURITY. SPECIAL GUESTS.
+                ***The venue is open for the public from 6pm every night, and you will have plenty of time to get snacks and refreshments, socialise, mingle around and find your perfect seat.<br>
+                We recommend to bring blankets and warm clothes if you attend the latest screening. As you know, it may get chilly at night so make sure to wrap up!***<br>
+                "Brooklyn Outdoor Film Festival Co." will show movies at Brooklyn Bridge Park this year from August 5th through 8th. We are going to show two movies every night - at 7pm and at 10pm.<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="border"></div>
+    <!-- TICKETS section end HERE -->
+
+
+    <!-- Footer Section -->
+
+
+  
+    <!-- Footer Section END -->
+    
+    <!-- Optional JavaScript span#year for Get the current year-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <script
+      src="http://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Get the current year for the Copyright
+      $("#year").text(new Date().getFullYear());
+    </script>
+  </body>
 </html>

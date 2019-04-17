@@ -1,42 +1,148 @@
 body {
-  background: #34495e;
-  color: #fff;
+  background: #f0b27a;
+  /*url(../img/bg-colors.png);
+  background-repeat: repeat;*/
+  color: dimgrey;
+}
+
+#grad {
+  background-color: #fee140;
+  background-image: linear-gradient(180deg, #fee140 0%, #fa709a 100%);
+}
+
+.bg-dark {
+  background-color: #181819 !important;
 }
 
 .navbar {
-  border-bottom: rgb(0, 142, 214) 3px solid;
+  border-bottom: coral 2px solid;
   opacity: 0.9;
 }
 
-h1,
-h2 {
-  color: #f0ad4e;
-  text-decoration: none;
-  letter-spacing: 3px;
+/*NAV ITEMS*/
+li.nav-item {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0 1.5rem;
+}
+
+.nav-link {
+  color: coral !important;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: relative;
+  padding: 3px 20px 6px !important;
+  margin: 2px 0 !important;
+}
+
+.nav-link::before,
+.nav-link::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: teal /*fuchsia  turquoise*/;
+  position: absolute;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-link::before {
+  top: 0;
+  transform-origin: left;
+}
+
+.nav-link::after {
+  bottom: 0;
+  transform-origin: right;
+}
+
+#register a {
+  color: dimgrey;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+#form {
+  color: white;
 }
 
 /* Background Image start*/
 #home-section {
-  background: url(../img/homebridge2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-position: absolute; */
-  min-height: 550px;
+  background: url(../img/film.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  min-height: 500px;
 }
-#home-section .dark-overlay {
+
+@media all and (min-width: 1575px) {
+  #home-section {
+    background-size: auto;
+    min-height: 550px;
+  }
+}
+
+@media all and (max-width: 575px) {
+}
+
+.d-sm-block {
+  background-color: lightsalmon;
+  opacity: 0.7;
+  margin: 1.5rem;
+  border-radius: 5px;
+}
+#heading {
+  color: black;
+  font-weight: 600;
+}
+
+/*#home-section .dark-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 550px;
-  background: rgba(0, 0, 0, 0.7);
-}
+  min-height: 400px;
+}*/
+
 /* Background Image end*/
 
 #home-section .home-inner {
   padding-top: 125px;
 }
 
-#home-section .card-form {
-  opacity: 0.7;
+/* 4 SECTIONS about-head-section, tickets-head-section*/
+
+#about-section {
+}
+
+#movies-section {
+}
+
+#tickets-section {
+}
+
+#news-section {
+  padding-bottom: 200px;
+}
+
+#footer-section {
+}
+
+#border {
+  width: 100%;
+  height: 3px;
+  background-color: coral;
+}
+
+.card {
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  box-shadow: -10px -10px 12px grey;
 }

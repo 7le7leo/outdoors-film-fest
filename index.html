@@ -27,7 +27,7 @@
 
     <title>BBMF</title>
   </head>
-  <body data-spy="scroll" data-target="#main-nav" id="home">
+  <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top py-3" id="main-nav">
       <div class="container">
         <button
@@ -41,19 +41,19 @@
           <!--Actual Navigation Start-->
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a href="#about-head-section" class="nav-link">About</a>
+              <a href="#about-head-section" class="nav-link" id="navTop">About</a>
             </li>
             <li class="nav-item">
-              <a href="#movies-head-section" class="nav-link">Movies</a>
+              <a href="#movies-head-section" class="nav-link" id="navTop">Movies</a>
             </li>
             <li class="nav-item">
-              <a href="#tickets-head-section" class="nav-link">Tickets</a>
+              <a href="#tickets-head-section" class="nav-link" id="navTop">Tickets</a>
             </li>
             <li class="nav-item">
-              <a href="#news-head-section" class="nav-link">News</a>
+              <a href="#news-head-section" class="nav-link" id="navTop">News</a>
             </li>
             <li class="nav-item">
-                <a href="#media-head-section" class="nav-link">Media</a>
+                <a href="#media-head-section" class="nav-link" id="navTop">Media</a>
               </li>
           </ul>
         </div>
@@ -164,39 +164,32 @@
         </div>
       </section>
     <!-- -MOVIES- CONTENT -->
-    <section id="movies-section" class="bg-light text-muted py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <img
-              src="img/about-section.jpg"
-              alt="abput-section"
-              class="img-fluid mb-3 rounded-circle"
-            />
-          </div>
-          <div class="col-md-6">
-            <h3>SHOWING THIS WEEKEND:</h3>
-            <p>
-             THE FILMS WE ARE SHOWING. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Quisquam, ut saepe vel reiciendis similique omnis id. Magnam nisi
-              aperiam possimus tenetur rerum voluptatum necessitatibus autem
-              explicabo at assumenda, vero accusantium deleniti repudiandae
-              facilis? Veniam velit saepe dolores minima iure. Harum ducimus
-              vero fugit repellat blanditiis velit laudantium amet nulla
-              repellendus illo architecto, ipsum consequuntur recusandae quo
-              eos! Facilis necessitatibus neque delectus quam aspernatur animi
-              quasi possimus soluta cum praesentium, laudantium nostrum
-              molestias totam eum sint officiis! Eum repellendus deserunt quo
-              explicabo possimus dolores cumque tempore at iure necessitatibus
-              deleniti, quidem est fugit, ab recusandae aut magni neque maxime?
-              Fuga, voluptas?
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section id="movies-section" class="bg-light text-muted py-2">
+    <div class="container" id="MoviesNav">
+    <!-- MOVIES Pills Navbar -->               
+    <ul class="nav nav-pills flex-column flex-sm-row w-100 justify-content-around text-center">
+        <li class="active">
+            <a class="nav-link btn btn-outline-secondary" id="MovieNavlink" data-toggle="pill" href="#">5th AUGUST</a>
+        </li>
+        <li>
+            <a class="nav-link btn btn-outline-secondary" id="MovieNavlink" data-toggle="pill" href="#">6th AUGUST</a>
+        </li>
+        <li>
+            <a class="nav-link btn btn-outline-secondary" id="MovieNavlink" data-toggle="pill" href="#">7th AUGUST</a>
+        </li>
+        <li>
+            <a class="nav-link btn btn-outline-secondary" id="MovieNavlink" data-toggle="pill" href="#">8th AUGUST</a>
+        </li>
+    </ul>
+    </div>
+
+
+    
+      
     <div id="border"></div>
     <!-- MOVIES section end HERE -->
+    <!-- -MOVIES- CONTENT -->
+
 
     <!-- TICKETS section START HERE -->
     <!-- TICKETS HEAD -->

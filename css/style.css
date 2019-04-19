@@ -171,3 +171,9 @@ a#socialMedia:hover {
   background-color: #fbab7e;
   background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
 }
+  
+.img-card {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
